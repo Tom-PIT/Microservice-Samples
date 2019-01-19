@@ -1,0 +1,34 @@
+{
+	"init": {
+		"user": "admin",
+		"storageProvider": "E8BC6674718241D0ADA31835BDA71E36"
+	},
+	"db": {
+		"connectionString": "data source=[server];initial catalog=[database];user id[user]tompit;password=[password];"
+	},
+	"sys": {
+		"location": "c:\\temp\\installTest\\sys",
+		"url": "http://localhost:8089/sys",
+		"authenticationToken": "D9CC9B30163E4ED7A74195A3964D797F",
+		"name": "Default",
+		"database": "TomPIT.SysDb.Sql.SqlProxy, TomPIT.SysDb.Sql",
+		"authentication": {
+			"jwToken": {
+				"validIssuer": "tompit.net",
+				"validAudience": "tompit.net",
+				"issuerSigningKey": "3F1001B2913C4355B89B723A42EB9A63"
+			}
+		},
+		"plugins": [
+			{
+				"kind": "storageProvider",
+				"folder": "TomPIT.StorageProviders.Sql",
+				"type": "TomPIT.StorageProvider.Sql.SqlStorageProvider, TomPIT.StorageProvider.Sql"
+			},
+			{
+				"kind": "sysDb",
+				"folder": "TomPIT.SysDb.Sql"
+			}
+		]
+	}
+}
